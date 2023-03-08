@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head> <!-- NOTE: By Jonas Medeisis -->
+    <meta charset="utf-8"> <!-- NOTE: https://vilniustech.lt/about-university/student-life-at-vilnius-tech/8195?lang=2 -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="styles.css">
+    <link rel="stylesheet" media="print" href="print.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Define the toRoman() function in the HTML document -->
+<script>
+  // Define the toRoman() function
+  function toRoman(num) {
+    // Define the Roman numeral symbols and their corresponding values
+    const symbols = {
+      M: 1000,
+      CM: 900,
+      D: 500,
+      CD: 400,
+      C: 100,
+      XC: 90,
+      L: 50,
+      XL: 40,
+      X: 10,
+      IX: 9,
+      V: 5,
+      IV: 4,
+      I: 1
+    };
+
+    // Initialize the result as an empty string
+    let result = '';
+
+    // Loop over the symbols and append the corresponding Roman numeral to the result
+    for (const [symbol, value] of Object.entries(symbols)) {
+      // Divide the number by the value of the symbol, and add the symbol to the result for each time it divides evenly
+      result += symbol.repeat(Math.floor(num / value));
+
+      // Subtract the value of the symbol from the number for each time it divides evenly
+      num -= value * Math.floor(num / value);
+    }
+
+    // Return the result
+    return result;
+  }
+</script>
+
+    <title>Uni Script Programming Project</title>
+  </head>
+  <body>
+    <div class="flex-container">
+    <div class="header no-print">
+      <div class="navigationBlock">
+        <div class="wrapper">
+          <div class="navigation">
+            <ul class="main_menu" style="overflow: visible;">
+              <li><span class="menu_title">Support UA</span></li>
+              <li><span class="menu_title">About University</span></li>
+              <li><span class="menu_title">For international students</span></li>
+              <li><span class="menu_title">Studies</span></li>
+              <li><span class="menu_title">Research and innovation</span></li>
+              <li><span class="menu_title">For business</span></li>
+              <li><span class="menu_title">VILNIUS TECH international</span></li>
+              <li><span class="menu_title">Faculties</span></li>
+              <li><span class="menu_title"><i class="fa fa-bars"></i></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="navhistory">
+        <p>Home &nbsp>&nbsp About University &nbsp>&nbsp Student life at VILNIUS TECH</p>
+      </div>
+    <img src="Images\Student life at VGTU.jpg" alt="" width="940" style="max-width:100%;height:auto;"><br><br>
+    <h3>EDUCATING THE WHOLE PERSON</h3>
+    <div class="bodytext">
+      <p>Vilnius Gediminas Technical University’s educational mission is to be the leader in technology educaation, which also means encouraging students to broaden their horizon.  We provide every opportunity for students to seek knowledge and develop their unique talents, whether intellectual or physical. </p>
+    </div>
+    <h1>Clubs and activities</h1>
+    <div class="bodytext">
+      <p>A dynamic university is an open and creative university. We are proud of our energetic, enthusiastic, talented students, and encourage them to further develop their skills at the University. </p>
+      <p>VILNIUS TECH has several art clubs that help to sustain long and historic traditions. Recently, our clubs celebrated their 50th anniversaries. </p>
+      <p>The most significant and oldest of these clubs include theatre, choir and dance. In our theatre studio, “Palėpė”, students act, direct and create, and in our mixed academic choir, “Gabija”, they sing together and perform in public to appreciative audiences. The folk dance ensemble, “Vingis”, celebrates native Lithuanian dance and is accompanied by traditional folk instruments. </p>
+      <math> <!-- NOTE: This is the root element for a MathML expression -->
+        <mrow> <!-- NOTE: This element is used to group a set of subexpressions -->
+          <msup> <!-- NOTE: This element is used to create a superscript -->
+            <mi>e</mi> <!-- NOTE: This element is used to represent a variable or identifier -->
+            <mi>x</mi>
+          </msup>
+          <mo>=</mo> <!-- NOTE: This element is used to represent a operator or punctuation symbol -->
+          <mfrac> <!-- NOTE: This element is used to create a fraction -->
+            <mn>1</mn> <!-- NOTE: This element is used to represent a number -->
+            <mrow>
+              <mn>1</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+          <mo>+</mo>
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+          <mo>+</mo>
+          <mfrac>
+            <mrow>
+              <msup>
+                <mi>x</mi>
+                <mn>3</mn>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>3</mn>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+          <mo>+</mo>
+          <mo>...</mo>
+          <mo>,</mo>
+          <mpadded lspace = "1em">
+          <mrow>
+            <mo>-</mo>
+            <mi>&infin;</mi>
+            <mo>&lt;</mo>
+            <mi>x</mi>
+            <mo>&lt;</mo>
+            <mi>&infin;</mi>
+          </mrow>
+          </mpadded>
+          </mrow>
+        </math>
+    </div>
+    <ul class="examplelist">
+      <li>Random</li>
+      <li>items</li>
+      <li>input</li>
+      <li>list</li>
+    </ul>
+    <h1>VILNIUS TECH sports</h1>
+    <div class="bodytext">
+      <p>For sports men and women there is no shortage of opportunities. Our athletes compete in sports as diverse as basketball, volleyball, football, tennis players, wrestling, track and field athletes, power lifting, and many other sports. VILNIUS TECH athletes are well represented in inter-university, national, international, European and World championships and tournaments. </p>
+      <p>Beyond the University, Vilnius has plenty of sports and entertainment venues to suit all interests. </p>
+    </div>
+    <form id="myForm">
+      <label>Name: <input type="text" name="name" /></label><br />
+      <label>Surname: <input type="text" name="surname" /></label><br />
+      <label>Number 1: <input type="number" name="number1" min="1" max="10" /></label><br />
+      <label>Number 2: <input type="number" name="number2" min="1" max="10" /></label><br />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Handle the form submission -->
+<script>
+  const form = document.getElementById('myForm');
+
+  form.addEventListener('submit', (event) => {
+    // Prevent the form from being submitted
+    event.preventDefault();
+
+    // Create an object to store the form data
+    const data = {
+      name: form.elements.name.value,
+      surname: form.elements.surname.value,
+      number1: form.elements.number1.value,
+      number2: form.elements.number2.value
+    };
+
+    // Get the values of the first and second number inputs
+    const num1 = Number(data.number1);
+    const num2 = Number(data.number2);
+
+    // Calculate the sum of the numbers
+    const sum = num1 + num2;
+
+    // Convert the sum to Roman numerals
+    const romanSum = toRoman(sum);
+
+    const sumElement = document.getElementById('sum')
+    // Check the value of the sum
+    if (sum <= 7) {
+    // Set the color of the sum to red
+      sumElement.style.color = 'red';
+    } else if (sum <= 14) {
+    // Set the color of the sum to orange
+      sumElement.style.color = 'orange';
+    } else {
+    // Set the color of the sum to green
+      sumElement.style.color = 'green';
+    }
+    // Create a new <p> element to display the data
+    const p = document.createElement('p');
+
+    // Set the innerHTML of the <p> element to the form data and the sum in Roman numerals
+    p.innerHTML = `Name: ${data.name}<br />Surname: ${data.surname}<br />Number 1: ${data.number1}<br />Number 2: ${data.number2}`;
+    sumElement.textContent = romanSum;
+
+    // Add the <p> element to the document body
+    sumElement.parentNode.insertBefore(p, sumElement);
+    console.log(data);
+  });
+  </script>
+  <span id="sum"></span>
+
+  </div><br><br>
+    <div class="footer" id="footer">
+      <div class="subfooter">
+        <a href="#" style="padding-right:20px;font-weight: bold;">Privacy policy</a>
+        <a href="#" style="font-weight: bold;">Contacts</a>
+        <p>Vilnius Gediminas Technical University <br>
+          Saulėtekio al. 11, LT-10223 Vilnius <br>
+          For international students: +370 5 274 5026, <a href="mailto:joe@example.com">tsc@vilniustech.lt</a> <br>
+          For general information: +370 5 274 5030, <a href="mailto:joe@example.com">vilniustech@vilniustech.lt</a> <br>
+          Fax +370 5 270 0112</p>
+        <p>Legal entity code 111950243,<br>
+            VAT payer code LT119502413.</p>
+            <div class="no-print">
+              <a onclick="window.print();">Print</a>
+            </div>
+      </div>
+    </div>
+    </div>
+
+  </body>
+</html>

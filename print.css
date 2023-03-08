@@ -1,0 +1,9 @@
+body{
+  font-style: serif;
+  text-align: right;
+  font-size: 12pt;
+}
+.no-print, .no-print *
+    {
+        display: none !important;
+    }

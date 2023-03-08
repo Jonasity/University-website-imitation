@@ -1,0 +1,138 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.header .navigationBlock {
+    background: #fff;
+    width: auto;
+}
+.wrapper {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto -1px auto;
+    padding-bottom: 1px;
+    position: relative;
+    left: 0;
+    transition: left 1s ease;
+}
+.navigation {
+    width: auto;
+    background-color: #fff;
+    position: relative;
+    float: right;
+    border-bottom-style:solid;
+    border-color: gray;
+    border-width: 1px;
+}
+.main_menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 940px;
+    font-size: 0;
+    margin: 0 auto;
+    height: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+.main_menu span.menu_title{
+      color: #0b4dc7;
+      position: relative;
+      font-family: "Open Sans";
+      font-size: 13px;
+      padding: 0 8px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 99;
+      font-weight: 700;
+      border-color: transparent;
+      border-style: solid;
+}
+.content{
+  margin:auto;
+  max-width: 940px;
+  padding: 20px;
+  display: block;
+}
+.bodytext{
+  font-size: 14px;
+  font-style: normal;
+  line-height: 155%;
+}
+.footer{
+  background-image: -webkit-linear-gradient(right, #F9FCFF 0%, #EBF4FC 100%);
+    background-image: -o-linear-gradient(right, #F9FCFF 0%, #EBF4FC 100%);
+    background-image: linear-gradient(to left, #F9FCFF 0%, #EBF4FC 100%);
+    padding: 25px 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+}
+.subfooter{
+  margin:auto;
+  width: 64%;
+}
+.examplelist{
+  list-style-type: none;
+}
+.examplelist li::before{
+  content:"";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("Crossed_circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+body {
+font-family: 'Open Sans';font-size: 22px;
+}
+p, h1 {
+  color: gray;
+}
+h1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 40px;
+}
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+a:link {
+color: #0b4dc7;
+text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0b4dc7;
+}
+a:visited{
+  color: #0b4dc7;
+}
+.navhistory{
+  font-size: 12px
+}
+
+h3{
+  color:#0b4dc7;
+  font-family:"Open Sans", sans-serif;
+  font-size:26px;
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:0;
+  padding:0;
+  line-height:150%
+}
